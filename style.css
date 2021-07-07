@@ -1,0 +1,178 @@
+a {
+  color: #337ab7;
+}
+p {
+  margin-top: 1rem;
+}
+a:hover {
+  color: #23527c;
+  cursor: pointer;
+}
+a:visited {
+  color: #8d75a3;
+}
+
+#title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#recordYourHum {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#yourRecording {
+  text-align: center;
+}
+
+body {
+  color: black;
+  font-family: "Abel", sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  width: 70%;
+
+  word-wrap: break-word;
+}
+
+red {
+  color: red;
+}
+
+#controls {
+  display: flex;
+  margin: 20px auto;
+  width: 50%;
+}
+
+button {
+  align-items: center;
+  font-family: "Abel", sans-serif;
+  background: #ed341d;
+  border: none;
+  border-radius: 0.15rem;
+  box-shadow: inset 0 -0.15rem 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  font-size: 17px;
+  font-weight: bold;
+  height: 40px;
+  justify-content: center;
+  margin-left: 2px;
+  min-width: 2rem;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button:active {
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3rem;
+}
+
+button:disabled {
+  background: lightgray;
+  pointer-events: none;
+}
+button:first-child {
+  margin-left: 0;
+}
+
+audio {
+  display: block;
+  margin-top: 0.2rem;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+#recordButton:hover {
+  background: #c72d1c;
+}
+
+#pauseButton,
+#stopButton {
+  background-color: lightgray;
+  color: rgb(71, 71, 71);
+}
+
+#pauseButton:hover,
+#stopButton:hover {
+  color: rgb(71, 71, 71);
+  background-color: #0000007c;
+}
+
+#formats {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+#player {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#myPlayer {
+  width: 450px;
+}
+
+#generatedMelody {
+  display: none;
+  text-align: center;
+}
+
+#recordingsList {
+  padding: 0;
+  max-width: 28em;
+  margin: 0 auto;
+}
+
+#recordingsList li {
+  text-align: center;
+}
+
+.liButtons {
+  display: inline-block;
+  background: none;
+  color: #000;
+  border-radius: 5px;
+  padding: 4px;
+  margin-top: 5px;
+  outline: none !important;
+  border: 1px solid #000;
+}
+
+.liButtons:hover {
+  display: inline-block;
+  background: none;
+  color: #000;
+  margin-top: 5px;
+  outline: none !important;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0.39);
+}
+
+.liButtons:hover,
+.liButton:focus {
+  outline: none !important;
+}
