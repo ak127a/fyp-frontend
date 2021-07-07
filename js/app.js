@@ -152,10 +152,12 @@ function createDownloadLink(blob) {
   upload.innerHTML = "<div class='liButtons'>Upload</div>";
   upload.addEventListener("click", function (event) {
     event.preventDefault();
+    var temp = document.getElementById("temp").value;
+    var steps = document.getElementById("steps").value;
     let data = new FormData();
     data.append("file", blob);
     return axios
-      .post(`http://localhost:5000/audio`, data, {
+      .post(`http://localhost:5000/audio?temp=${temp}&steps=${steps}`, data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
